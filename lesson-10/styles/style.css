@@ -1,0 +1,121 @@
+.swipe {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+
+.menu {
+    width: 50%;
+    position: relative;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+@media only screen and (min-width:320px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.452);
+        z-index: 1111;
+        backdrop-filter: blur(10px);
+    }
+
+    .menu > li {
+        margin: 10px;
+        text-align: center;
+        font-style: 18px;
+        background-color:rgba(255, 255, 255, 0.208);
+    }
+
+    .menu > li:hover {
+        background-color:rgba(255, 255, 255, 0.625);
+    }
+
+    .menu > li:active {
+        background-color:rgba(255, 255, 255, 0.625);
+    }
+}
+
+@media only screen and (min-width:375px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        height: 90vh;
+        background-color: rgba(0, 0, 0, 0.452);
+        z-index: 1111;
+        backdrop-filter: blur(10px);
+    }
+
+    .menu > li {
+        margin: 10px;
+        text-align: center;
+        font-style: 18px;
+        background-color:rgba(255, 255, 255, 0.208);
+    }
+
+    .menu > li:hover {
+        background-color:rgba(255, 255, 255, 0.625);
+    }
+
+    .menu > li:active {
+        background-color:rgba(255, 255, 255, 0.625);
+    }
+}
+
+@media only screen and (min-width:576px){
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 60%;
+        width: 50%;
+        position: relative;
+        top: 0px;
+        left: 0;
+        height: 20vh;
+        background-color: transparent;
+        z-index: 1111;
+        backdrop-filter: blur(0px);
+    }
+
+    .menu > li {
+        margin: 0px;
+        text-align: center;
+        font-size: 16px;
+        background-color:transparent;
+    }
+
+    .menu > li:hover {
+        background-color:none;
+    }
+
+    .menu > li:active {
+        background-color:rgba(255, 255, 255, 0.625);
+    }
+}
+
+
+

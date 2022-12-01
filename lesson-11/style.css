@@ -1,0 +1,31 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+
+.cards {
+    width: 300px;
+    height: 120px;
+    background-color: red;
+    color: white;
+}
+
+.some {
+    font-size: 50px;
+    color: red;
+    background-color: blue;
+}
+
+.card-name {
+    color: red;
+    padding: 5px;
+    background-color: lime;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- BS ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>title</title>
+</head>
+
+<body>
+    <header class="bg-danger">
+        <div class="container">
+            <nav class="nav btn-danger d-flex align-items-center justify-content-between w-100 p-4 ">
+                <h3 class="nav-logo text-light">LOGO</h3>
+                <ul class="menu list d-md-flex w-50 justify-content-around list-unstyled">
+                    <li class="list__items"><a href="#" class="list__items--link text-white text-uppercase text-decoration-none">links-1</a></li>
+                    <li class="list__items"><a href="#" class="list__items--link text-white text-uppercase text-decoration-none">links-2</a></li>
+                    <li class="list__items"><a href="#" class="list__items--link text-white text-uppercase text-decoration-none">links-3</a></li>
+                    <li class="list__items"><a href="#" class="list__items--link text-white text-uppercase text-decoration-none">links-4</a></li>
+                    <li class="list__items"><a href="#" class="list__items--link text-white text-uppercase text-decoration-none">links-5</a></li>
+                </ul>
+                <span class="toggle-menu d-block d-md-none text-white fs-1">
+                    <i class="bi bi-list"></i>
+                </span>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-5">
+                        <button class="btn btn-success">ADD</button>
+                        <button class="btn btn-danger">REMOVE</button>
+                        <button class="btn btn-warning">CONTAINS</button>
+                        <button class="btn btn-primary">TOGGLE</button>
+                    </div>
+                    <div class="col-6">
+                        <div class="card bg-light shadow p-5">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis modi earum id quam inventore! Deserunt sequi repellat voluptatem itaque quia sapiente neque eum quasi quo consequuntur unde quos repudiandae nobis excepturi laudantium, nihil, rerum alias?
+                        </div>
+                    </div>
+                    <div class="col-6 wrapper"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./utils.js"></script>
+<script src="./script.js"></script>
+
+</html>
